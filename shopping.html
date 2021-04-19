@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="script/jquery-1.12.3.js"></script>
+    <script src="script/script.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <h3>회원가입</h3>
+        <div id="dupID">* 사용 중인 아이디 : test01, geust, mem02</div>
+        <main id="main">
+            <div id="infoArea">
+                <span><input type="text" placeholder="이름"></span>
+                <span><input type="text" placeholder="아이디" id="uID"></span>
+                <span><input type="password" placeholder="비밀번호" class="PW" id="uPW">
+                    <input type="checkbox" id="PWChk"></span>
+                <span><input type="password" placeholder="비밀번호 확인" class="PW" id="uPW_Re"></span>
+                <span><input type="text" placeholder="이메일"></span>
+                <span>
+                    <div id="day">
+                        <select>
+                            <option>1970</option>
+                            <option>2021</option>
+                        </select>
+                        <select>
+                            <option>월</option>
+                            <option>4월</option>
+                        </select>
+                        <select>
+                            <option>일</option>
+                            <option>6일</option>
+                        </select>
+                    </div>
+                    <!--div#day-->
+                </span>
+                <span><input type="radio" id="radio"> 남 &nbsp; <input type="radio" id="radio" checked> 여</span>
+                <span>
+                    <input type="text" placeholder="휴대폰 번호">
+                    <button type="button">인증</button>
+                </span>
+                <span>
+                    <input type="text" placeholder="SMS 인증번호">
+                    <button type="button">확인</button>
+                </span>
+            </div>
+            <!--div#infoArea-->
+        </main>
+        <!--main#main-->
+
+        <aside id="aside">
+            <h4>이용약관</h4>
+            <iframe src="source/membership.html" frameborder="0"></iframe>
+
+            <input type="checkbox"> <span>14세 이상입니다. (필수)</span>
+            <p>* 회원가입에 필요한 최소한의 정보만 입력 받음으로써 고객님의 개인정보 수정을 최소화하고</p>
+            <p>&nbsp;&nbsp;편리한 회원가입을 제공합니다.</p>
+
+            <div id="agreeArea">
+                <div id="allAgree">
+                    <input type="checkbox" id="allAgreeChk"> 전체동의
+                </div>
+                <!--div#allAgree-->
+                <div id="agree">
+                    <div id="agree1">
+                        <input type="checkbox" id="chk1" class="check"> 이용약관
+                        <button type="button">내용보기</button>
+                        <input type="checkbox" id="chk2" class="check"> 개인정보 수집 및 이용안내
+                        <button type="button">내용보기</button>
+                    </div>
+                    <!--div#agree1-->
+                    <br>
+                    <div id="agree2">
+                        <input type="checkbox" id="chk3" class="check"> 개인정보 제3자 제공
+                        <button type="button">내용보기</button>
+                        <input type="checkbox" id="chk4" class="check"> 개인정보 처리위탁
+                        <button type="button">내용보기</button>
+                    </div>
+                    <!--div#agree2-->
+                </div>
+                <!--div#agree-->
+            </div>
+            <!--div#agreeArea-->
+        </aside>
+        <!--aside#aside-->
+
+        <button id="Join" type="button">동의하고 가입완료</button>
+    </div>
+    <!--div#wrap-->
+</body></html>
